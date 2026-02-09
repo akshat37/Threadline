@@ -4,7 +4,7 @@ from firebase_admin import credentials, auth
 
 cred = credentials.Certificate('pondering-tutorial-a608e-1c2dd27d1cbb.json')
 
-# firebase_admin.initialize_app(cred)
+firebase_admin.initialize_app(cred)
 
 def app():
 
@@ -72,4 +72,5 @@ def app():
     if st.session_state.signout:
         st.text('Name '+st.session_state.username)
         st.text('Email id: '+st.session_state.useremail)
+
         st.button('Sign out', on_click=t) 

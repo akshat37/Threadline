@@ -2,7 +2,7 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import credentials, auth
 
-cred = credentials.Certificate('pondering-tutorial-a608e-1c2dd27d1cbb.json')
+cred = credentials.Certificate('pondering-tutorial-a608e-5a1770782933.json')
 
 firebase_admin.initialize_app(cred)
 
@@ -74,3 +74,4 @@ def app():
         st.text('Email id: '+st.session_state.useremail)
 
         st.button('Sign out', on_click=t) 
+

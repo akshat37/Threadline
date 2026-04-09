@@ -8,7 +8,7 @@ load_dotenv()
 
 import about, account, home, trending, your_posts
 st.set_page_config(
-    page_title="Pondering",
+    page_title="Threadline",
 )
 st.markdown(
     """
@@ -36,7 +36,7 @@ class MultiApp:
     def run(self):
         with st.sidebar:
             app = option_menu(
-                menu_title='Pondering ',
+                menu_title='Threadline',
                 options=['Home','Account','Trending','Your Posts','about'],
                 icons=['house-fill','person-circle','trophy-fill','chat-fill','info-circle-fill'],
                 menu_icon='chat-text-fill',

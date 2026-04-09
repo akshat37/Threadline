@@ -2,13 +2,13 @@ import streamlit as st
 import firebase_admin
 from firebase_admin import credentials, auth
 
-cred = credentials.Certificate('pondering-tutorial-a608e-5a1770782933.json')
+cred = credentials.Certificate('threadline-a624d-91cea6b33797.json')
 
 firebase_admin.initialize_app(cred)
 
 def app():
 
-    st.title('Welcome to :violet[Pondering!] :sun_with_face:')
+    st.title('Welcome to :violet[Threadline!] :sun_with_face:')
     # choice = st.selectbox('Login/Signup', ['Login', 'Signup'])
 
     if 'username' not in st.session_state:
